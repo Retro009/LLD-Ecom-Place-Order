@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "Orders")
 public class Order extends BaseModel{
     @ManyToOne
     private User user;
