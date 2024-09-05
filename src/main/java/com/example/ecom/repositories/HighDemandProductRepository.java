@@ -10,5 +10,5 @@ import java.util.Optional;
 
 @Repository
 public interface HighDemandProductRepository extends JpaRepository<HighDemandProduct,Integer> {
-    List<HighDemandProduct> findByProductIdIn(List<Integer> productId);
+    List<HighDemandProduct> findAllByProductIdIn(List<Integer> productId);
 }

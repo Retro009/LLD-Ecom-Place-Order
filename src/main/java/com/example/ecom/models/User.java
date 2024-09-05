@@ -13,8 +13,8 @@ import java.util.List;
 public class User extends BaseModel{
     private String name;
     private String email;
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Address> addresses;
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Order> orders;
 }

@@ -13,6 +13,6 @@ import java.util.List;
 @Repository
 public interface InventoryRepository extends JpaRepository<Inventory, Integer> {
 
-    List<Inventory> findByProductIdIn(List<Integer> productIds);
+    List<Inventory> findAllByProductIdIn(List<Integer> productIds);
 
 }
